@@ -1,7 +1,20 @@
-let ir_sensor = 0
+let ir_waarde = 0
+let rechts = 92
+let links = 93
+let vooruit = 94
+let achteruit = 95
 basic.forever(function () {
-    ir_sensor = IR.IR_read()
+    ir_waarde = IR.IR_read()
 })
 basic.forever(function () {
-    basic.showNumber(ir_sensor)
+    basic.showNumber(ir_waarde)
+    if (vooruit == ir_waarde) {
+        basic.showLeds(`
+            . . # . .
+            . # # # .
+            # . # . #
+            . . # . .
+            . . # . .
+            `)
+    }
 })
