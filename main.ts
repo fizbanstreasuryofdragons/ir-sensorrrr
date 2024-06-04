@@ -38,8 +38,8 @@ basic.forever(function () {
             . # . . .
             . . # . .
             `)
-        maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 15)
-        maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CCW, 15)
+        maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 25)
+        maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CCW, 25)
     }
     if (rechts == ir_waarde) {
         basic.showLeds(`
@@ -49,8 +49,8 @@ basic.forever(function () {
             . . . # .
             . . # . .
             `)
-        maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 15)
-        maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 15)
+        maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 25)
+        maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 25)
     }
     if (freeze == ir_waarde) {
         basic.showLeds(`
